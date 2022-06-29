@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block tituloPagina %}
-Cursos - App Coder
+Jugadores - App Juego
 {% endblock %}
 
 {% block contenidoPagina %}
@@ -10,15 +10,18 @@ Cursos - App Coder
     <div class="container px-5">
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-6">
-                Los juegos son:
+                Los estudiantes son:
                 <ul class="list-group">
+                    {% comment %}
                     {% for juego in juegos%}
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                           {{juego.nombre}} 
-                          <span class="badge bg-info rounded-pill">{{curso.comision}}</span>
+                          <span class="badge bg-info rounded-pill">{{juego.grupo}}</span>
             
                         </li>
                     {% endfor %}
+
+                    {% endcomment %}
                 </ul>
             </div>
         </div>

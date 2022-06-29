@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    "ProyectoCoderApp",
+    "ProyectoJuegoApp",
 ]
 
 MIDDLEWARE = [
@@ -53,12 +53,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ProyectoCoder.urls'
+ROOT_URLCONF = 'ProyectoJuego.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"/Users/eloso/PYTH/ProyectoCoder/ProyectoCoderApp/templatess/ProyectoCoderApp"],
+        'DIRS': [r"/Users/eloso/PYTH/Entrega1Roldan/Entrega1Roldan1/ProyectoJuegoApp/templatess/ProyectoJuegoApp"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ProyectoCoder.wsgi.application'
+WSGI_APPLICATION = 'ProyectoJuego.wsgi.application'
 
 
 # Database
